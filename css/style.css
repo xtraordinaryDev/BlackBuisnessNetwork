@@ -721,5 +721,19 @@ margin-bottom: 15px;
 	.business_box img{
 		width: 100%;
 	}
+	.icon-container {
+		text-align: center;  /* Ensures icon is centered */
+		margin-bottom: 20px;  /* Adds space between icon and heading */
+	  }
+	  
+	  .fas {
+		color: #000;  /* Change the color of the icon */
+	  }
+	  /* Ensure the social media section is centered */
+  h2 {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}	  
 
 }
