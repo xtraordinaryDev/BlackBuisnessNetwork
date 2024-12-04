@@ -734,6 +734,30 @@ margin-bottom: 15px;
     font-size: 32px;
     margin-top: 15px;
     margin-bottom: 15px;
-}	  
+}	
+
+    /* Scrollable container */
+    .scrollable-table-container {
+		max-height: 400px;
+		overflow-y: auto;
+	  }
+  
+	  /* Optional styling to make the table more readable */
+	  .scrollable-table-container table {
+		width: 100%;
+		border-collapse: collapse;
+	  }
+  
+	  .scrollable-table-container th, .scrollable-table-container td {
+		padding: 10px;
+		text-align: left;
+		border: 1px solid #ccc;
+	  }
+  
+	  /* Styling for table content */
+	  .content-cell {
+		max-width: 400px;
+		word-wrap: break-word;
+	  }
 
 }
