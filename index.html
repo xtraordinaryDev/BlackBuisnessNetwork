@@ -9,13 +9,23 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Include Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Include AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- Include AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
@@ -69,139 +79,388 @@
     </div><!-- bg_primary -->
 
     <div class="slider">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video autoplay muted loop class="d-block w-100 h-280px">
+        <source src="images/AdobeStock_141811056.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption d-none d-md-block">
+        <h4 data-aos="fade-down" data-aos-delay="100">St. Paul | Minneapolis</h4>
+        <h1 data-aos="fade-down" data-aos-delay="400">Black Business Network</h1>
+        <h5 data-aos="fade-down" data-aos-delay="600">Uniting and empowering Black-owned businesses, entrepreneurs,
+          and professionals in Minnesota through
+          community support, economic development, and advocacy.</h5>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video autoplay muted loop class="d-block w-100 h-280px">
-              <source src="images/AdobeStock_141811056.mp4" type="video/mp4">
-            </video>
-            <div class="carousel-caption d-none d-md-block">
-              <h4>St. Paul | Minneapolis</h4>
-              <h1>Black Business Network</h1>
-              <h5>Uniting and empowering Black-owned businesses, entrepreneurs, and professionals in Minnesota through
-                community support, economic development, and advocacy.</h5>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
       </div>
     </div><!-- slider -->
-    <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script> 
+    <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
   </header>
   <script src="https://zeffy-scripts.s3.ca-central-1.amazonaws.com/embed-form-script.min.js"></script>
 
 
-  <section class="bg_primary">
+  <section class="bg_primary_mission" data-aos="fade-up">
     <div class="container">
-      <div class="up_down_space">
+      <div class="up_down_space_mission">
         <div class="row">
           <div class="col-lg-12">
-            <div class="section_heading text-center">
-              <i class="fas fa-flag fa-3x"></i> <!-- Flag icon for mission and direction -->
-
-              <h2>Our Mission</h2>
-              <p>The purpose of Black Business Network (BBN) shall be to unite and empower Black-owned businesses,
+            <div class="section_heading_mission text-center" data-aos="fade-up">
+              <i class="fas fa-flag fa-3x" data-aos="fade-up"></i> <!-- Flag icon for mission and direction -->
+              <h2 data-aos="fade-up">Our Mission</h2>
+              <p data-aos="fade-up">The purpose of Black Business Network (BBN) shall be to unite and empower
+                Black-owned businesses,
                 entrepreneurs, and professionals in Minnesota BBN aims to create networking opportunities, foster
                 economic development, and address social and economic issues impacting the Black community.</p>
-              <ul>
-                <li><a class="btn_primary" href="join.html">Join Now</a></li>
-                <li><a class="btn_primary"
-                    href="https://www.zeffy.com/embed/donation-form/77994153-f598-4c92-a324-373908dda8b3?modal=true">Donate
-                    Now</a></li>
-              </ul>
-            </div><!-- section_heading -->
+              <div class="button_group_mission">
+                <a class="btn_gold_mission" href="join.html">Join Now</a>
+                <a class="btn_gold_mission"
+                  href="https://www.zeffy.com/embed/donation-form/77994153-f598-4c92-a324-373908dda8b3?modal=true">Donate
+                  Now</a>
+              </div>
+            </div><!-- section_heading_mission -->
           </div><!-- col-lg-12 -->
         </div><!-- row -->
-      </div><!-- up_down_space -->
-    </div><!-- bg_primary -->
+      </div><!-- up_down_space_mission -->
+    </div><!-- container -->
   </section>
 
-  <section class="container-fluid">
+  <style>
+    /* Mission Section */
+    .bg_primary_mission {
+      background-color: #3f291b;
+      padding: 40px 0;
+      font-size: 1.2rem;
+    }
+
+    .section_heading_mission {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section_heading_mission i {
+      color: #3f291b;
+    }
+
+    .section_heading_mission h2 {
+      color: #3f291b;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .section_heading_mission p {
+      color: #555555;
+    }
+
+    .button_group_mission {
+      margin-top: 20px;
+    }
+
+    .btn_gold_mission {
+      background-color: #b59560;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .btn_gold_mission:hover {
+      background-color: #978556;
+      color: #ffffff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .section_heading_mission {
+        padding: 15px;
+      }
+
+      .section_heading_mission h2 {
+        font-size: 1.5em;
+      }
+
+      .btn_gold_mission {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+
+  <section class="container-fluid event-section">
     <div class="row align_center">
-      <div class="col-lg-6 col-md-6 mar-b-3">
+      <div class="col-lg-6 col-md-6 mar-b-3" data-aos="fade-up">
         <div class="section_content p-l-110 p-r-60">
-          <i class="fas fa-calendar-alt fa-3x"></i> <!-- Calendar icon -->
-
-          <h2 style="margin-top: 15px; margin-bottom: 15px;">Come to an event!</h2>
-          <p>Join us at one of our events and connect with Black entrepreneurs, community leaders, and supporters across
-            Minnesota. Whether you're networking, learning, or celebrating, your presence helps strengthen and uplift
-            our local businesses. Be part of the movement—attend today!</p>
-
-          <a class="btn_primary" href="events.html">View event calendar</a>
+          <i class="fas fa-calendar-alt fa-3x" data-aos="fade-up"></i> <!-- Calendar icon -->
+          <h2 style="margin-top: 15px; margin-bottom: 15px;" data-aos="fade-up">Come to an event!</h2>
+          <p data-aos="fade-up">Join us at one of our events and connect with Black entrepreneurs, community leaders,
+            and supporters across Minnesota. Whether you're networking, learning, or celebrating, your presence helps
+            strengthen and uplift our local businesses. Be part of the movement—attend today!</p>
+          <a class="btn_primary_event" href="events.html" data-aos="fade-up">View event calendar</a>
         </div><!-- section_content -->
       </div><!-- col-lg-6 col-md-6 -->
-      <div class="col-lg-6 col-md-6 p-right-0 p-left-0">
+      <div class="col-lg-6 col-md-6 p-right-0 p-left-0" data-aos="fade-up">
         <div class="owl-carousel owl-theme" id="image_carousel">
-
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <div class="image-content">
-              <img src="images/img-1.png">
-              <div class="image-content-box bg_primary">
-                <h6>New Year Networking Kickoff</h6>
-                <strong>Date</strong>
-                <p>Start the year strong with our virtual networking session focused on new beginnings and setting
-                  growth goals for Black-owned businesses in Minnesota</p>
+              <img src="images/img-1.png" data-aos="fade-up">
+              <div class="image-content-box bg_primary" data-aos="fade-up">
+                <h6 data-aos="fade-up">New Year Networking Kickoff</h6>
+                <strong data-aos="fade-up">Date</strong>
+                <p data-aos="fade-up">Start the year strong with our virtual networking session focused on new
+                  beginnings and setting growth goals for Black-owned businesses in Minnesota</p>
               </div>
             </div><!-- image-content -->
           </div><!-- item -->
-
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <div class="image-content">
-              <img src="images/img-1.png">
-              <div class="image-content-box bg_primary">
-                <h6> Black History Month Wellness Workshop</h6>
-                <strong>January 20
-                </strong>
-                <p>Join us for a Wellness Workshop in celebration of Black History Month, where we’ll focus on holistic
-                  health and well-being for Black entrepreneurs.</p>
+              <img src="images/BHM.jpg" data-aos="fade-up">
+              <div class="image-content-box bg_primary" data-aos="fade-up">
+                <h6 data-aos="fade-up">Black History Month Wellness Workshop</h6>
+                <strong data-aos="fade-up">January 20</strong>
+                <p data-aos="fade-up">Join us for a Wellness Workshop in celebration of Black History Month, where we’ll
+                  focus on holistic health and well-being for Black entrepreneurs.</p>
               </div>
             </div><!-- image-content -->
           </div><!-- item -->
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <div class="image-content">
-              <img src="images/img-1.png">
-              <div class="image-content-box bg_primary">
-                <h6>Women Who Lead Virtual Event</h6>
-                <strong>March 12
-                </strong>
-                <p>Celebrate Women's History Month with a virtual panel of inspiring Black women leaders who’ll share
-                  their insights on leadership, resilience, and success.</p>
+              <img src="images/innerbanner4.png" data-aos="fade-up">
+              <div class="image-content-box bg_primary" data-aos="fade-up">
+                <h6 data-aos="fade-up">Women Who Lead Virtual Event</h6>
+                <strong data-aos="fade-up">March 12</strong>
+                <p data-aos="fade-up">Celebrate Women's History Month with a virtual panel of inspiring Black women
+                  leaders who’ll share their insights on leadership, resilience, and success.</p>
               </div>
             </div><!-- image-content -->
           </div><!-- item -->
         </div><!-- owl-carousel -->
       </div><!-- col-lg-6 col-md-6 -->
     </div>
-  </section><!-- container-fluid -->
+  </section>
 
-  <section>
+  <style>
+    /* Event Section */
+    .event-section {
+      padding: 40px 0;
+      background-color: #f9f9f9;
+    }
+
+    .section_content {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section_content i {
+      color: #3f291b;
+    }
+
+    .section_content h2 {
+      color: #3f291b;
+    }
+
+    .section_content p {
+      color: #555555;
+    }
+
+    .btn_primary_event {
+      background-color: #b59560;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 35px;
+      font-size: 1.2rem;
+    }
+
+    .btn_primary_event:hover {
+      background-color: #ffffff;
+      color: #3f291b;
+      border: 1px solid #3f291b;
+    }
+
+    .owl-carousel .item {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-content-box {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .image-content-box h6 {
+      color: #3f291b;
+    }
+
+    .image-content-box strong {
+      color: #3f291b;
+    }
+
+    .image-content-box p {
+      color: #555555;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .section_content {
+        padding: 15px;
+      }
+
+      .section_content h2 {
+        font-size: 1.5em;
+      }
+
+      .btn_primary {
+        padding: 8px 16px;
+      }
+
+      .owl-carousel .item {
+        padding: 15px;
+      }
+
+      .image-content-box {
+        padding: 10px;
+      }
+    }
+  </style>
+
+  <section style="margin-bottom: 50px;">
+    <div class="container" style="max-width: 100vw; overflow: hidden;" data-aos="fade-up">
+      <div class="up_down_space">
+        <div class="row mb-3">
+          <div class="col-lg-12">
+            <div class="section_heading_news" data-aos="fade-up">
+              <i class="fas fa-newspaper fa-3x icon_news"></i> <!-- Newspaper icon for news and events -->
+              <h3 class="c_primary_news">News and Events</h3>
+            </div>
+          </div>
+        </div>
+      </div><!-- row -->
+      <div class="news_ticker"
+        style="background-color: #ffffff; border: 2px solid #3f291b; padding: 20px; border-radius: 12px; overflow-x: auto;"
+        data-aos="fade-up">
+        <ul class="ticker_list"
+          style="list-style: none; margin: 0; padding: 0; display: flex; overflow-x: auto; flex-direction: row; scroll-snap-type: x mandatory;">
+          <li class="ticker_item"
+            style="flex: 0 0 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-snap-align: start;"
+            data-aos="fade-up">
+            <span class="icon" style="color: gold; font-size: 2rem; margin-bottom: 10px;">&#9733;</span>
+            <div style="text-align: center;">
+              <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
+                  style="text-decoration: none; color: inherit;">BBN Official Launch in January 2025</a></h4>
+              <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">We’re excited to
+                announce the official launch of the Black Business Network (BBN) in January 2025! Our mission is to
+                empower Black-owned businesses and professionals across Minnesota by fostering economic development,
+                community support, and lasting connections. Join us as we kick off this journey together and take the
+                first step toward a stronger, more resilient Black business community.</p>
+            </div>
+          </li>
+          <li class="ticker_item"
+            style="flex: 0 0 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-snap-align: start;"
+            data-aos="fade-up">
+            <span class="icon" style="color: gold; font-size: 2rem; margin-bottom: 10px;">&#x1F4C5;</span>
+            <div style="text-align: center;">
+              <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
+                  style="text-decoration: none; color: inherit;">January – New Year, New Beginnings</a></h4>
+              <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">January marks the
+                start of BBN’s Monthly Initiatives! This month’s theme, ‘New Year, New Beginnings,’ focuses on setting
+                strong foundations for growth and success. We’ll be offering resources, networking events, and valuable
+                insights to help our members start the year on the right foot. Stay tuned for workshops and events
+                designed to support your journey</p>
+            </div>
+          </li>
+          <li class="ticker_item"
+            style="flex: 0 0 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-snap-align: start;"
+            data-aos="fade-up">
+            <span class="icon" style="color: gold; font-size: 2rem; margin-bottom: 10px;">&#x1F4DA;</span>
+            <div style="text-align: center;">
+              <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
+                  style="text-decoration: none; color: inherit;">Success Story: Just Imagine</a></h4>
+              <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">Just Imagine, one of
+                our member businesses, reflects on their journey with the Black Business Network: ‘In a world where the
+                journey of entrepreneurship can often feel isolating, BBN has emerged as a beacon of hope and
+                collaboration. We are grateful for the incredible community that not only celebrates individuality but
+                also amplifies collective strength. Through BBN’s workshops and connections with local and state
+                officials, we’ve gained knowledge, advocacy, and a sense of belonging. Together, we’re building a legacy
+                of resilience and empowerment, breaking barriers and setting new standards for success in our
+                communities.</p>
+            </div>
+          </li>
+        </ul>
+      </div><!-- news_ticker -->
+    </div><!-- up_down_space -->
+    </div>
+  </section>
+  <style>
+    /* News Section Heading */
+    .section_heading_news {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon_news {
+      color: #3f291b;
+      margin-right: 10px;
+    }
+
+    .c_primary_news {
+      color: #3f291b;
+      font-size: 2rem;
+      text-align: center;
+      margin: 0;
+    }
+
+    .ticker_list {
+      scrollbar-width: thin;
+      scrollbar-color: #3f291b #ffffff;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      white-space: nowrap;
+    }
+
+    .ticker_list::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .ticker_list::-webkit-scrollbar-thumb {
+      background-color: #3f291b;
+      border-radius: 5px;
+    }
+
+    .ticker_list::-webkit-scrollbar-track {
+      background-color: #ffffff;
+    }
+
+    .ticker_item {
+      scroll-snap-align: start;
+    }
+  </style>
+
+  <!-- <section>
     <div class="container-fluid">
       <div class="row align_center">
         <div class="col-lg-6 col-md-6 p-left-0 p-right-0">
           <div class="simple-image">
             <img src="images/img-2.png">
           </div>
-        </div><!-- col-lg-6 col-md-6 -->
+        </div>
         <div class="col-lg-6 col-md-6 mar-b-3">
           <div class="section_content p-r-110 p-l-60">
-            <i class="fas fa-hand-holding-heart fa-3x"></i> <!-- Hands holding a heart icon -->
+            <i class="fas fa-hand-holding-heart fa-3x"></i> 
 
             <h2 style="margin-top: 15px; margin-bottom: 15px;">Make a donation!</h2>
             <p>Your generous contribution helps empower and uplift Black-owned businesses across Minnesota. Together, we
@@ -210,152 +469,272 @@
 
             <a class="btn_primary"
               href="https://www.zeffy.com/embed/donation-form/77994153-f598-4c92-a324-373908dda8b3?modal=true">Donate</a>
-          </div><!-- section_content -->
-        </div><!-- col-lg-6 col-md-6 -->
-      </div><!-- row -->
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-
-  <section>
+  </section> -->
+  <!-- <section>
     <div class="container-fluid">
       <div class="row align_center column-reverse">
         <div class="col-lg-6 col-md-6  mar-b-3">
           <div class="section_content p-l-110 p-r-60">
-            <i class="fas fa-map-marker-alt fa-3x"></i> <!-- Location marker icon -->
+            <i class="fas fa-map-marker-alt fa-3x"></i> 
             <h2 style="margin-top: 15px; margin-bottom: 15px;">What areas do we serve?</h2>
             <p>We proudly serve Black-owned businesses across Minnesota, from the Twin Cities to communities throughout
               the state. Our mission is to support and uplift entrepreneurs everywhere, fostering growth and opportunity
               for all.</p>
 
             <a class="btn_primary" href="directory-business.html">View the business directory</a>
-          </div><!-- section_content -->
-        </div><!-- col-lg-6 col-md-6 -->
+          </div>
+        </div>
         <div class="col-lg-6 col-md-6 p-left-0 p-right-0">
           <div class="simple-image">
             <img src="images/img-3.png">
           </div>
-        </div><!-- col-lg-6 col-md-6 -->
+        </div>
 
-      </div><!-- row -->
+      </div>
     </div>
-  </section>
-
-
-  <section class="bg_primary">
+  </section> -->
+  <section class="bg_primary_sponsor" data-aos="fade-up">
     <div class="container">
-      <div class="up_down_space">
+      <div class="up_down_space_sponsor">
         <div class="row">
           <div class="col-lg-12">
-            <div class="section_heading text-center">
-              <i class="fas fa-handshake fa-3x"></i> <!-- Handshake icon for partnership -->
-
-              <h2 style="margin-top: 15px; margin-bottom: 15px;">Become a sponsor!</h2>
-              <p>Partner with us to support Black-owned businesses across Minnesota. As a sponsor, you’ll help drive
-                economic growth, create opportunities, and make a lasting impact on our community. Join us in empowering
-                entrepreneurs and fostering a brighter future for all.</p>
-              <a class="btn_primary" href="sponsors.html">Learn about sponsorship</a>
-
-            </div><!-- section_heading -->
+            <div class="section_heading_sponsor text-center" data-aos="fade-up">
+              <i class="fas fa-handshake fa-3x icon_sponsor"></i> <!-- Handshake icon for partnership -->
+              <h2 class="title_sponsor">Become a sponsor!</h2>
+              <p class="description_sponsor">Partner with us to support Black-owned businesses across Minnesota. As a
+                sponsor, you’ll help drive economic growth, create opportunities, and make a lasting impact on our
+                community. Join us in empowering entrepreneurs and fostering a brighter future for all.</p>
+              <a class="btn_primary_sponsor" href="sponsors.html">Learn about sponsorship</a>
+            </div><!-- section_heading_sponsor -->
           </div><!-- col-lg-12 -->
         </div><!-- row -->
-      </div><!-- up_down_space -->
-    </div><!-- bg_primary -->
+      </div><!-- up_down_space_sponsor -->
+    </div><!-- container -->
   </section>
 
-  <section>
-    <div class="container">
-      <div class="up_down_space">
-        <div class="row mb-3">
-          <div class="col-lg-12">
-            <div class="section_heading">
-              <h3 class="c_primary">News and Events</h3>
-            </div>
-          </div>
-        </div><!-- row -->
-        <div class="row">
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="blog_box">
-              <img src="images/img-4.png">
-              <div class="blog_box_title">
-                <h4><a href="#">BBN Official Launch in January 2025</a></h4>
-                <p>We’re excited to announce the official launch of the Black Business Network (BBN) in January 2025! Our mission is to empower Black-owned businesses and professionals across Minnesota by fostering economic development, community support, and lasting connections. Join us as we kick off this journey together and take the first step toward a stronger, more resilient Black business community.</p>
-              </div><!-- blog_box_title -->
-            </div><!-- blog_box -->
-          </div><!-- col-lg-3 col-md-3 -->
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="blog_box">
-              <img src="images/img-5.png">
-              <div class="blog_box_title">
-                <h4><a href="#">January – New Year, New Beginnings
-                </a></h4>
-                <p>January marks the start of BBN’s Monthly Initiatives! This month’s theme, ‘New Year, New Beginnings,’ focuses on setting strong foundations for growth and success. We’ll be offering resources, networking events, and valuable insights to help our members start the year on the right foot. Stay tuned for workshops and events designed to support your journey.</p>
-              </div><!-- blog_box_title -->
-            </div><!-- blog_box -->
-          </div><!-- col-lg-3 col-md-3 -->
-          <div class="col-lg-3 col-md-3 col-6">
-            <div class="blog_box">
-              <img src="images/img-6.png">
-              <div class="blog_box_title">
-                <h4><a href="#">Success Story: Just Imagine</a></h4>
-                <p>Just Imagine, one of our member businesses, reflects on their journey with the Black Business Network: ‘In a world where the journey of entrepreneurship can often feel isolating, BBN has emerged as a beacon of hope and collaboration. We are grateful for the incredible community that not only celebrates individuality but also amplifies collective strength. Through BBN’s workshops and connections with local and state officials, we’ve gained knowledge, advocacy, and a sense of belonging. Together, we’re building a legacy of resilience and empowerment, breaking barriers and setting new standards for success in our communities.</p>
-              </div><!-- blog_box_title -->
-            </div><!-- blog_box -->
-          </div><!-- col-lg-3 col-md-3 -->
-        
-        </div><!-- row -->
-      </div><!-- up_down_space -->
-    </div>
-  </section>
+  <style>
+    /* Sponsor Section */
+    .bg_primary_sponsor {
+      background-color: #f9f9f9;
+      padding: 60px 0;
+      background-image: radial-gradient(circle, #3f291b 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
 
-  <section class="bg_primary">
-    <div class="container">
-      <div class="up_down_space">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section_heading text-center">
-              <i class="fas fa-rocket fa-3x"></i>
-              <!-- Handshake icon for partnership -->
+    .up_down_space_sponsor {
+      padding: 20px 0;
+    }
 
-              <h2 style="margin-top: 15px; margin-bottom: 15px;">BBN Official Launch in January 2025</h2>
-              <p>We’re excited to announce the official launch of the Black Business Network (BBN) in January 2025! Our
-                mission is to empower Black-owned businesses and professionals across Minnesota by fostering economic
-                development, community support, and lasting connections. Join us as we kick off this journey together
-                and take the first step toward a stronger, more resilient Black business community</p>
-            </div><!-- section_heading -->
-          </div><!-- col-lg-12 -->
-        </div><!-- row -->
-      </div><!-- up_down_space -->
-    </div><!-- bg_primary -->
-  </section>
+    .section_heading_sponsor {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-  <section class="container up_down_space">
+    .icon_sponsor {
+      color: #3f291b;
+      margin-bottom: 20px;
+    }
+
+    .title_sponsor {
+      color: #3f291b;
+      font-size: 2.5rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .description_sponsor {
+      color: #555555;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn_primary_sponsor {
+      background-color: #b59560;
+      color: #ffffff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      font-size: 1.2rem; /* Increase font size */
+    }
+
+    .btn_primary_sponsor:hover {
+      background-color: #ffffff;
+      color: #3f291b;
+      border: 1px solid #3f291b;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .section_heading_sponsor {
+        padding: 20px;
+      }
+
+      .title_sponsor {
+        font-size: 2rem;
+      }
+
+      .description_sponsor {
+        font-size: 1rem;
+      }
+
+      .btn_primary_sponsor {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+
+    <section class="container up_down_space_sponsors" data-aos="fade-up">
     <div class="row">
-     <div class="col-lg-12">
-       <div class="section_heading">
-         <i class="fas fa-heart fa-3x"></i> <!-- Heart icon for gratitude -->
+      <div class="col-lg-12">
+        <div class="section_heading_sponsors text-center" data-aos="fade-up">
+          <i class="fas fa-heart fa-3x icon_sponsors"></i> <!-- Heart icon for gratitude -->
+          <h3 class="title_sponsors">Thank you to our current sponsors!</h3>
+          <p class="description_sponsors">A special thanks to Rooted Philanthropic and ESNDC for their generous support of Black-owned businesses across Minnesota. Your commitment helps empower entrepreneurs and foster growth in our communities. We are grateful for your partnership in making a positive impact!</p>
+        </div><!-- section_heading_sponsors -->
+      </div>
+    </div><!-- row -->
+    <div class="row align_center sponsor-logos" data-aos="fade-up">
+      <div class="col-lg-6 col-md-6 col-12 text-center">
+        <div class="sponsor-logo">
+          <img src="images/rooted.jpeg" alt="Rooted Philanthropic">
+        </div><!-- sponsor-logo -->
+      </div><!-- col-lg-6 col-md-6 col-12 -->
+      <div class="col-lg-6 col-md-6 col-12 text-center">
+        <div class="sponsor-logo esndc-logo">
+          <img src="images/esndc.png" alt="ESNDC">
+        </div><!-- sponsor-logo -->
+      </div><!-- col-lg-6 col-md-6 col-12 -->
+    </div><!-- row -->
+    <div class="row align_center" data-aos="fade-up">
+      <div class="col-lg-12 text-center">
+        <p><a href="https://form.jotform.com/jsform/243088677692069" class="btn_primary_sponsor">Become a Partner</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    /* Sponsors Section */
+    .up_down_space_sponsors {
+      padding: 60px 0;
+      background-color: #ffffff; /* White background */
+    }
+  
+    .section_heading_sponsors {
+      background-color: #3f291b; /* Dark brown background */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      color: #ffffff; /* White text color */
+    }
+  
+    .icon_sponsors {
+      color: #d4af37; /* Gold color for icons */
+      margin-bottom: 20px;
+    }
+  
+    .title_sponsors {
+      color: #d4af37; /* Gold color for headings */
+      font-size: 2.5rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .description_sponsors {
+      color: #ffffff; /* White color for text */
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+  
+    .sponsor-logos {
+      display: flex;
+      justify-content: space-between; /* Ensure logos are spaced evenly */
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .sponsor-logo {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px; /* Add padding to ensure spacing */
+    }
+  
+    .sponsor-logo img {
+      max-width: 80%; /* Ensure images take up 80% of their container */
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .sponsor-logo.esndc-logo img {
+      height: 200px;/* Make the ESNDC logo slightly bigger */
+    }
+  
+    .become-partner-link {
+      color: #3f291b; /* Dark brown text color */
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #3f291b; /* Dark brown border */
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+  
+    .become-partner-link:hover {
+      background-color: #3f291b; /* Dark brown background on hover */
+      color: #ffffff; /* White text color on hover */
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .section_heading_sponsors {
+        padding: 20px;
+      }
+  
+      .title_sponsors {
+        font-size: 2rem;
+      }
+  
+      .description_sponsors {
+        font-size: 1rem;
+      }
+  
+      .sponsor-logos {
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+      }
+  
+      .sponsor-logo {
+        flex: 1 1 100%; /* Ensure logos take up full width on smaller screens */
+        padding: 20px 0; /* Add padding to ensure spacing */
+      }
+  
+      .sponsor-logo img {
+        max-width: 80%; /* Ensure images take up 80% of their container */
+      }
+  
+      .sponsor-logo.esndc-logo img {
+       
+        height: 200px;
 
-         <h3>Thank you to our current sponsors!</h3>
-         <p>A special thanks to Rooted Philanthropic and ESNDC for their generous support of Black-owned businesses across Minnesota. Your commitment helps empower entrepreneurs and foster growth in our communities. We are grateful for your partnership in making a positive impact!</p>
-       </div><!-- section_heading -->
-     </div>
-   </div><!-- row -->
-   <div class="row align_center">
-     <div class="col-lg-6 col-md-6 col-6">
-       <div class="sponsor-logo">
-         <img src="images/rooted.jpeg">
-       </div><!--sponsor-logo -->
-     </div><!-- col-lg-6 col-md-6 -->
-     <div class="col-lg-6 col-md-6 col-6">
-       <div class="sponsor-logo">
-          <img src="images/esndc.png">
-       </div><!--sponsor-logo -->
-     </div><!-- col-lg-6 col-md-6 -->
-     <a class="btn_primary" href="sponsors.html">Learn about sponsorship</a>
-   </div>
-</section>
-
-
-
+      }
+  
+      .become-partner-link {
+        padding: 8px 16px;
+      }
+    }
+  </style>
 
   <footer class="bg_primary">
     <div class="container">
@@ -420,25 +799,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/owl.carousel.js"></script>
-  <script type="text/javascript">
-    $('#image_carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      navText: ["<div class='nav-btn prev-slide'><span class='carousel-control-prev-icon'></span></div>", "<div class='nav-btn next-slide'><span class='carousel-control-next-icon'></span></div>"],
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    });
-  </script>
   <script>
     // Function to switch between tables
     function changeTable(tableIndex) {
@@ -456,6 +816,24 @@
       dots[tableIndex - 1].classList.add("active");
     }
   </script>
+  <script>
+    $(document).ready(function () {
+      $("#image_carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2500, // 2 seconds
+        autoplayHoverPause: true
+      });
+      AOS.init(); // Initialize AOS library
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      AOS.init();
+    });
+  </script>
+
 </body>
 
 </html>
