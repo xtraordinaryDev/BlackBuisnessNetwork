@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
 </head>
 
@@ -75,12 +76,12 @@
   <section>
     <div class="container">
       <div class="up_down_space">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="section_heading text-center"> <!-- Add text-center for horizontal centering -->
+        <div class="row d-flex">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="section_heading text-center flex-fill">
               <!-- Icon for Mission -->
               <div class="icon-container">
-                <i class="fas fa-bullhorn fa-3x"></i> <!-- Example icon (Bullhorn) -->
+                <i class="fas fa-bullhorn fa-3x"></i>
               </div>
               <h2 class="c_primary">Our Mission</h2>
               <p>Empower and educate Black-owned businesses in Minnesota through a supportive network led by Black
@@ -88,11 +89,11 @@
                 while promoting land ownership within the Black community.</p>
             </div><!-- section_heading -->
           </div><!-- col-lg-6 col-md-6 -->
-          <div class="col-lg-6 col-md-6">
-            <div class="section_heading text-center"> <!-- Add text-center for horizontal centering -->
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="section_heading text-center flex-fill">
               <!-- Icon for Vision -->
               <div class="icon-container">
-                <i class="fas fa-eye fa-3x"></i> <!-- Example icon (Eye) -->
+                <i class="fas fa-eye fa-3x"></i>
               </div>
               <h2 class="c_primary">Our Vision</h2>
               <p>To build a thriving and sustainable ecosystem for Black-owned businesses in Minnesota by fostering
@@ -106,204 +107,263 @@
     </div><!-- container -->
   </section>
 
+  <style>
+    .up_down_space {
+      padding: 60px 0;
+      background-image: radial-gradient(circle, #3f291b 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    .section_heading {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section_heading:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-container {
+      margin-bottom: 20px;
+    }
+
+    .icon-container i {
+      color: #3f291b;
+    }
+
+    .c_primary {
+      color: #3f291b;
+      font-size: 2.5rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .section_heading p {
+      color: #555555;
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .section_heading {
+        padding: 20px;
+      }
+
+      .c_primary {
+        font-size: 2rem;
+      }
+
+      .section_heading p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+
   <section>
     <div class="container">
-      <div class="up_down_space">
+      <div class="up_down_space_team" data-aos="fade-up">
         <div class="row mb-3">
           <div class="col-lg-12">
-            <div class="section_heading">
-              <h3 class="c_primary">Meet Our Team</h3>
+            <div class="section_heading_team text-center">
+              <h3 class="c_primary_team">Meet Our Team</h3>
             </div>
           </div>
         </div><!-- row -->
         <div class="row">
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>David Frazier</h6>
-                  <p>President</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>David Frazier, President of the Black Business Network, is a respected leader and community
-                    advocate in Saint Paul. A dedicated father and the owner of Just Imagine, a clothing boutique with
-                    two locations, and FlyAzz Frenchies, David is celebrated for his commitment to service and business
-                    growth. Named Volunteer of the Year by Salvation Army Metro, he is passionate about fostering a
-                    supportive and thriving environment for Black-owned businesses across the community.</p>
-                </div>
-              </div><!-- row -->
-            </div><!-- team-box -->
-          </div><!-- col-lg-3 col-md-3 -->
-          <div class="col-lg-6 col-md-6 mb-3">
-            <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Kendra Lofton</h6>
-                  <p>Vice President</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Kendra Lofton is the Vice President of the Black Business Network and a dedicated leader with a
-                    deep passion for service and community. As the founder of WRLD Class Cleaning LLC and Kendra's
-                    Clubhouse, and a caring mother, she works tirelessly to empower Black-owned businesses in Saint
-                    Paul. Kendra’s heart for mentorship and growth has made her an invaluable advocate for progress and
-                    sustainability within the community.</p>
-                </div>
-              </div><!-- row -->
+              <h6>David Frazier</h6>
+              <p class="position">President</p>
+              <p>David Frazier, President of the Black Business Network, is a respected leader and community advocate in
+                Saint Paul. A dedicated father and the owner of Just Imagine, a clothing boutique with two locations,
+                and FlyAzz Frenchies, David is celebrated for his commitment to service and business growth. Named
+                Volunteer of the Year by Salvation Army Metro, he is passionate about fostering a supportive and
+                thriving environment for Black-owned businesses across the community.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Seanne Thomas</h6>
-                  <p>Secretary</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Seanne holds a Bachelor’s Degree in Economics from the University of Minnesota. She’s an expert in
-                    first-time homebuyer programs, FHA financing, and down payment and closing-cost assistance. Seanne
-                    approaches her work at ABC Realty from a community-building perspective, striving to help families
-                    become part of vibrant neighborhoods.</p>
-                </div>
-              </div><!-- row -->
+              <h6>Kendra Lofton</h6>
+              <p class="position">Vice President</p>
+              <p>Kendra Lofton is the Vice President of the Black Business Network and a dedicated leader with a deep
+                passion for service and community. As the founder of WRLD Class Cleaning LLC and Kendra's Clubhouse, and
+                a caring mother, she works tirelessly to empower Black-owned businesses in Saint Paul. Kendra’s heart
+                for mentorship and growth has made her an invaluable advocate for progress and sustainability within the
+                community.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Lynette Harris</h6>
-                  <p>Treasurer</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Lynette Harris, an urban gardening advocate from 2012 to 2015, has dedicated her career to
-                    promoting community-based initiatives and sustainable practices. She brings this passion to her role
-                    as Treasurer of the Black Business Network (BBN), where she manages the organization's financial
-                    operations. As the director of Moms Food Shelf since 2008, Lynette has gained deep insights into
-                    food insecurity and has been a strong advocate for families in need. Her role as a District 5 board
-                    member since 2017 has further developed her expertise in youth development and community advocacy.
-                  </p>
-                </div>
-              </div><!-- row -->
+              <h6>Seanne Thomas</h6>
+              <p class="position">Secretary</p>
+              <p>Seanne holds a Bachelor’s Degree in Economics from the University of Minnesota. She’s an expert in
+                first-time homebuyer programs, FHA financing, and down payment and closing-cost assistance. Seanne
+                approaches her work at ABC Realty from a community-building perspective, striving to help families
+                become part of vibrant neighborhoods.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Coa Murrell</h6>
-                  <p>Director of Fundraising and Finance</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Coa Murrell holds a Bachelor’s Degree in Healthcare Administration from Minnesota State University
-                    and serves as the Director of Fundraising and Finance for the Black Business Network (BBN). In her
-                    role at Care4All, she oversees financial operations and healthcare services, demonstrating strong
-                    leadership in both financial and healthcare management. Coa has extensive experience supporting and
-                    mentoring small businesses, empowering entrepreneurs through strategic planning and resource
-                    management. Additionally, her work as an instructor at Care4All Lab Services has allowed her to
-                    engage youth in practical training and mentorship. Coa’s dedication to Black-owned businesses makes
-                    her a key asset to BBN's mission.</p>
-                </div>
-              </div><!-- row -->
+              <h6>Lynette Harris</h6>
+              <p class="position">Treasurer</p>
+              <p>Lynette Harris, an urban gardening advocate from 2012 to 2015, has dedicated her career to promoting
+                community-based initiatives and sustainable practices. She brings this passion to her role as Treasurer
+                of the Black Business Network (BBN), where she manages the organization's financial operations. As the
+                director of Moms Food Shelf since 2008, Lynette has gained deep insights into food insecurity and has
+                been a strong advocate for families in need. Her role as a District 5 board member since 2017 has
+                further developed her expertise in youth development and community advocacy.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Darius Dawson</h6>
-                  <p>Director of Marketing and Public Relations</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Darius Dawson, our Director of Marketing and Public Relations, is a seasoned entrepreneur with an
-                    impressive portfolio spanning various businesses and real estate holdings. His deep expertise and
-                    dedication to uplifting Black-owned businesses enable him to bring fresh strategies and inspiring
-                    leadership to the Black Business Network, driving growth and creating impactful opportunities for
-                    the community.</p>
-                </div>
-              </div><!-- row -->
+              <h6>Coa Murrell</h6>
+              <p class="position">Director of Fundraising and Finance</p>
+              <p>Coa Murrell holds a Bachelor’s Degree in Healthcare Administration from Minnesota State University and
+                serves as the Director of Fundraising and Finance for the Black Business Network (BBN). In her role at
+                Care4All, she oversees financial operations and healthcare services, demonstrating strong leadership in
+                both financial and healthcare management. Coa has extensive experience supporting and mentoring small
+                businesses, empowering entrepreneurs through strategic planning and resource management. Additionally,
+                her work as an instructor at Care4All Lab Services has allowed her to engage youth in practical training
+                and mentorship. Coa’s dedication to Black-owned businesses makes her a key asset to BBN's mission.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Terrell Smith</h6>
-                  <p>Director of Member Engagement and Programs</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Terrell- was born in Chicago, southside with no intention of becoming a barber. Moved to Minnesota
-                    in 1992 where he worked as a forklift operator in a shipping and receiving department. Terrell took
-                    a chance and stepped outside his comfort zone to become a telemarketing for Jackson Hewitt. This led
-                    Terrell to go to Mn School of Barbering on Lake Street. He has been cutting hair for 30 years now
-                    and loves to give back to his community by helping the disadvantaged and homeless in his
-                    neighborhood with free cuts. This led him to a partnership with ESDNC to become part of the Small
-                    Business Revolution tv show on Amazon Prime and Hulu. Terrell is a community leader and tries to
-                    uplift the neighborhood at every corner. Terrell has been at his currant location called Gentleman
-                    Cuts for eight years. Terrell gets a sense of gratification to help someone with personal hygiene.
-                    Terrel also carries an instructor’s license to teach people the art of barbing. Terrell is currently
-                    the Director of Member Engagement and Programs for the Black Business Network St Paul.</p>
-                </div>
-              </div><!-- row -->
+              <h6>Darius Dawson</h6>
+              <p class="position">Director of Marketing and Public Relations</p>
+              <p>Darius Dawson, our Director of Marketing and Public Relations, is a seasoned entrepreneur with an
+                impressive portfolio spanning various businesses and real estate holdings. His deep expertise and
+                dedication to uplifting Black-owned businesses enable him to bring fresh strategies and inspiring
+                leadership to the Black Business Network, driving growth and creating impactful opportunities for the
+                community.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
-
-
-
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="team-box">
-              <div class="row">
-                <div class="col-lg-5 col-md-6 text-center">
-                  <img src="images/img-8.png">
-                  <h6>Ky'Mari Love</h6>
-                  <p>Position</p>
-                </div>
-                <div class="col-lg-7 col-md-6">
-                  <p>Ky'Mari Love- a Business Administration graduate with a concentration in Accounting, works as an
-                    Economic Development Specialist at the East Side Neighborhood Development Company. She is dedicated
-                    to creating a thriving, inclusive environment for Black-owned businesses in East Saint Paul through
-                    the Black Business Network (BBN). Ky'Mari aims to lead impactful events, connect members to
-                    essential resources, and build partnerships that promote lasting economic growth. She has also
-                    served North Minneapolis through various projects with Juxtaposition Arts (JXTA) and represented CD
-                    9 on the Los Angeles City Youth Council, amplifying youth voices. Driven by a vision of equity,
-                    Ky'Mari is committed to building sustainable opportunities that empower the community.</p>
-                </div>
-              </div><!-- row -->
+              <h6>Terrell Smith</h6>
+              <p class="position">Director of Member Engagement and Programs</p>
+              <p>Terrell- was born in Chicago, southside with no intention of becoming a barber. Moved to Minnesota in
+                1992 where he worked as a forklift operator in a shipping and receiving department. Terrell took a
+                chance and stepped outside his comfort zone to become a telemarketing for Jackson Hewitt. This led
+                Terrell to go to Mn School of Barbering on Lake Street. He has been cutting hair for 30 years now and
+                loves to give back to his community by helping the disadvantaged and homeless in his neighborhood with
+                free cuts. This led him to a partnership with ESDNC to become part of the Small Business Revolution tv
+                show on Amazon Prime and Hulu. Terrell is a community leader and tries to uplift the neighborhood at
+                every corner. Terrell has been at his currant location called Gentleman Cuts for eight years. Terrell
+                gets a sense of gratification to help someone with personal hygiene. Terrel also carries an instructor’s
+                license to teach people the art of barbing. Terrell is currently the Director of Member Engagement and
+                Programs for the Black Business Network St Paul.</p>
+            </div><!-- team-box -->
+          </div><!-- col-lg-6 col-md-6 -->
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-box">
+              <h6>Ky'Mari Love</h6>
+              <p class="position">Position</p>
+              <p>Ky'Mari Love- a Business Administration graduate with a concentration in Accounting, works as an
+                Economic Development Specialist at the East Side Neighborhood Development Company. She is dedicated to
+                creating a thriving, inclusive environment for Black-owned businesses in East Saint Paul through the
+                Black Business Network (BBN). Ky'Mari aims to lead impactful events, connect members to essential
+                resources, and build partnerships that promote lasting economic growth. She has also served North
+                Minneapolis through various projects with Juxtaposition Arts (JXTA) and represented CD 9 on the Los
+                Angeles City Youth Council, amplifying youth voices. Driven by a vision of equity, Ky'Mari is committed
+                to building sustainable opportunities that empower the community.</p>
             </div><!-- team-box -->
           </div><!-- col-lg-6 col-md-6 -->
         </div><!-- row -->
-      </div><!-- up_down_space -->
-    </div>
+      </div><!-- up_down_space_team -->
+    </div><!-- container -->
   </section>
 
+  <style>
+    .up_down_space_team {
+      padding: 60px 0;
+    }
+
+    .section_heading_team {
+      margin-bottom: 40px;
+    }
+
+    .c_primary_team {
+      color: #3f291b;
+      font-size: 2.5rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .team-box {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-box h6 {
+      color: #3f291b;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .team-box .position {
+      color: #b59560;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .team-box p {
+      color: #555555;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .c_primary_team {
+        font-size: 2rem;
+      }
+
+      .team-box h6 {
+        font-size: 1.3rem;
+      }
+
+      .team-box .position {
+        font-size: 1rem;
+      }
+
+      .team-box p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   <section>
     <div class="container">
       <div class="up_down_space">
         <div class="row mb-3">
           <div class="col-lg-12">
-            <div class="section_heading text-center">
-              <h2 class="c_primary">Core Values</h2>
+            <div class="text-center"></div>
+              <h2>Core Values</h2>
             </div>
           </div>
         </div><!-- row -->
         <div class="row">
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="core_valuesbox">
               <div class="icon"><i class="fas fa-chart-line"></i></div>
               <h3>Economic Empowerment</h3>
@@ -314,7 +374,7 @@
             </div><!-- core_valuesbox -->
           </div><!-- col-lg-6 col-md-6 -->
 
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="core_valuesbox">
               <div class="icon"><i class="fas fa-users"></i></div>
               <h3>Community Engagement</h3>
@@ -325,7 +385,7 @@
             </div><!-- core_valuesbox -->
           </div><!-- col-lg-6 col-md-6 -->
 
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up">
             <div class="core_valuesbox">
               <div class="icon"><i class="fas fa-balance-scale"></i></div>
               <h3>Equity and Inclusivity</h3>
@@ -335,7 +395,7 @@
             </div><!-- core_valuesbox -->
           </div><!-- col-lg-6 col-md-6 -->
 
-          <div class="col-lg-6 col-md-6 mb-3">
+          <div class="col-lg-6 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
             <div class="core_valuesbox">
               <div class="icon"><i class="fas fa-lightbulb"></i></div>
               <h3>Innovation and Resourcefulness</h3>
@@ -402,55 +462,80 @@
     }
   </style>
 
-   <section class="bg_primary">
+  <section class="bg_primary">
     <div class="container">
       <div class="up_down_space">
+        <div class="row mb-3">
+          <div class="col-lg-12">
+            <div class="text-center"></div>
+              <h2 style="color: #ffffff;">Strategic Initiatives</h2>
+              <h5>Click Tiles to see more information</h5>
+            </div>
+          </div>
+        </div><!-- row -->
         <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <div class="about-box">
+          <div class="col-lg-3 col-md-6 mb-3" data-aos="fade-up">
+            <div class="about-box" onclick="toggleDetails(this)">
               <div class="about-box-image">
                 <i class="fas fa-chalkboard-teacher"></i>
               </div>
               <h6>Expanded Workshops</h6>
-              <p class="hover-text">Empowering Black-owned businesses through hands-on workshops focused on leadership, financial growth, and tech integration.</p>
-              <p class="expanded-details">BBN’s workshops provide essential training and resources for Black-owned businesses, with a focus on sustainable growth, effective leadership, and modern technology integration. These sessions equip entrepreneurs with skills in financial management, digital marketing, and leadership development, helping businesses thrive in an evolving marketplace.</p>
+              <p class="hover-text">Empowering Black-owned businesses through hands-on workshops focused on leadership,
+                financial growth, and tech integration.</p>
+              <p class="expanded-details">BBN’s workshops provide essential training and resources for Black-owned
+                businesses, with a focus on sustainable growth, effective leadership, and modern technology integration.
+                These sessions equip entrepreneurs with skills in financial management, digital marketing, and
+                leadership development, helping businesses thrive in an evolving marketplace.</p>
             </div><!-- about-box -->
-          </div><!-- col-lg-4 col-md-4 -->
-          <div class="col-lg-4 col-md-4">
-            <div class="about-box">
+          </div><!-- col-lg-3 col-md-6 -->
+          <div class="col-lg-3 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-box" onclick="toggleDetails(this)">
               <div class="about-box-image">
                 <i class="fas fa-handshake"></i>
               </div>
               <h6>Mentorship and Networking</h6>
-              <p class="hover-text">Building a connected community of Black entrepreneurs with access to mentors and networking events that inspire growth.</p>
-              <p class="expanded-details">Through enhanced mentorship programs and networking events, BBN fosters meaningful connections among Black business owners and professionals. Members have access to experienced mentors and industry experts who offer guidance and support, while networking events encourage collaboration and knowledge-sharing, building a strong community of Black entrepreneurs.</p>
+              <p class="hover-text">Building a connected community of Black entrepreneurs with access to mentors and
+                networking events that inspire growth.</p>
+              <p class="expanded-details">Through enhanced mentorship programs and networking events, BBN fosters
+                meaningful connections among Black business owners and professionals. Members have access to experienced
+                mentors and industry experts who offer guidance and support, while networking events encourage
+                collaboration and knowledge-sharing, building a strong community of Black entrepreneurs.</p>
             </div><!-- about-box -->
-          </div><!-- col-lg-4 col-md-4 -->
-          <div class="col-lg-4 col-md-4">
-            <div class="about-box">
+          </div><!-- col-lg-3 col-md-6 -->
+          <div class="col-lg-3 col-md-6 mb-3" data-aos="fade-up">
+            <div class="about-box" onclick="toggleDetails(this)">
               <div class="about-box-image">
                 <i class="fas fa-users"></i>
               </div>
               <h6>Community Engagement Programs</h6>
-              <p class="hover-text">Strengthening community ties with local initiatives, volunteer events, and collaborative projects that foster unity and growth.</p>
-              <p class="expanded-details">BBN is dedicated to strengthening community ties by focusing on initiatives that benefit both businesses and their communities. Through local events, volunteer opportunities, and community-building projects, BBN encourages members to engage actively in creating positive social impact, fostering a sense of unity, and working toward collective success.</p>
+              <p class="hover-text">Strengthening community ties with local initiatives, volunteer events, and
+                collaborative projects that foster unity and growth.</p>
+              <p class="expanded-details">BBN is dedicated to strengthening community ties by focusing on initiatives
+                that benefit both businesses and their communities. Through local events, volunteer opportunities, and
+                community-building projects, BBN encourages members to engage actively in creating positive social
+                impact, fostering a sense of unity, and working toward collective success.</p>
             </div><!-- about-box -->
-          </div><!-- col-lg-4 col-md-4 -->
-          <div class="col-lg-4 col-md-4">
-            <div class="about-box">
+          </div><!-- col-lg-3 col-md-6 -->
+          <div class="col-lg-3 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-box" onclick="toggleDetails(this)">
               <div class="about-box-image">
                 <i class="fas fa-store"></i>
               </div>
               <h6>Focus on Black-Owned Businesses</h6>
-              <p class="hover-text">Championing Black-owned businesses through tailored resources, funding support, and advocacy for sustained success.</p>
-              <p class="expanded-details">BBN’s commitment to supporting Black-owned businesses is central to its mission. Tailored programs address the unique challenges faced by Black entrepreneurs, providing resources and advocacy to ensure these businesses have opportunities for success. From funding options to exclusive training, BBN empowers Black-owned businesses to create lasting legacies within their communities.</p>
+              <p class="hover-text">Championing Black-owned businesses through tailored resources, funding support, and
+                advocacy for sustained success.</p>
+              <p class="expanded-details">BBN’s commitment to supporting Black-owned businesses is central to its
+                mission. Tailored programs address the unique challenges faced by Black entrepreneurs, providing
+                resources and advocacy to ensure these businesses have opportunities for success. From funding options
+                to exclusive training, BBN empowers Black-owned businesses to create lasting legacies within their
+                communities.</p>
             </div><!-- about-box -->
-          </div><!-- col-lg-4 col-md-4 -->
+          </div><!-- col-lg-3 col-md-6 -->
         </div><!-- row -->
       </div><!-- up_down_space -->
     </div><!-- container -->
   </section>
-  
+
   <style>
     .about-box {
       background-color: #f9f9f9;
@@ -462,151 +547,317 @@
       position: relative;
       cursor: pointer;
     }
-  
+
     .about-box-image {
       font-size: 2rem;
       color: #3f291b;
       margin-bottom: 10px;
       text-align: center;
     }
-  
+
     .about-box h6 {
       margin-bottom: 10px;
       transition: color 0.3s;
+      color: #3f291b;
     }
-  
+
     .about-box .hover-text {
       display: block;
       transition: opacity 0.3s;
     }
-  
+
     .about-box .expanded-details {
       display: none;
       margin-top: 10px;
       transition: opacity 0.3s;
     }
-  
-    .about-box:hover {
-      transform: scale(1.05);
-      background-color: #3f291b;
-    }
-  
-    .about-box:hover h6 {
-      color: #d4af37;
-    }
-  
+
     .about-box:hover .hover-text {
+      display: block;
+      color: #3f291b;
+    }
+
+    .about-box.active {
+      transform: scale(1.05);
+      background-color: #b59560;
+    }
+
+    .about-box.active h6 {
+      color: #ffffff;
+    }
+
+    .about-box.active .hover-text {
       display: none;
     }
-  
-    .about-box:hover .expanded-details {
+
+    .about-box.active .expanded-details {
       display: block;
       color: #ffffff;
     }
-  
-    .about-box:active {
-      background-color: #d4af37;
-    }
-  
-    .about-box:active h6 {
-      color: #3f291b;
-    }
-  
-    .about-box:active .expanded-details {
-      color: #3f291b;
+
+    @media (max-width: 768px) {
+      .about-box {
+        margin-bottom: 20px;
+      }
     }
   </style>
 
+  <script>
+    function toggleDetails(element) {
+      element.classList.toggle('active');
+    }
+  </script>
 
-  <section class="container">
-    <div class="up_down_space">
-      <div class="row mb-3">
-        <div class="col-lg-12">
-          <div class="section_heading">
-            <h3 class="c_primary">Partnership Highlights</h3>
+<section class="current_partners_section">
+  <div class="container">
+    <div class="section_heading_partners text-center">
+      <h2 class="c_primary_partners">Current Partners</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 mb-3">
+        <div class="partner_box" data-aos="fade-up">
+          <div class="partner_logo">
+            <img src="images/esndc.png" alt="ESNDC Logo">
           </div>
-        </div>
-      </div><!-- row -->
+          <div class="partner_description">
+            <h3>ESNDC</h3>
+            <p>East Side Neighborhood Development Company (ESNDC) has been a foundational partner in supporting the Black Business Network (BBN). Their commitment to building vibrant and thriving communities aligns perfectly with BBN’s mission to uplift Black-owned businesses in Minnesota. ESNDC’s support has empowered BBN to offer essential resources, workshops, and networking events that foster economic development and community empowerment.</p>
+          </div>
+        </div><!-- partner_box -->
+      </div><!-- col-lg-6 col-md-6 -->
+      <div class="col-lg-6 col-md-6 mb-3">
+        <div class="partner_box" data-aos="fade-up" data-aos-delay="100">
+          <div class="partner_logo">
+            <img src="images/rooted.jpeg" alt="Rooted Philanthropy Logo">
+          </div>
+          <div class="partner_description">
+            <h3>Rooted Philanthropy</h3>
+            <p>Rooted Philanthropy has been instrumental in helping BBN make a significant impact on the Black business community. Through their funding and strategic support, BBN has been able to launch initiatives that bring valuable resources, education, and connections to Black-owned businesses across Minnesota. Rooted Philanthropy’s partnership has been a stepping stone, allowing BBN to step into a broader, impactful role, ultimately enabling us to reach new heights in empowering Black entrepreneurs. Their support is truly the foundation upon which BBN has built its current success.</p>
+          </div>
+        </div><!-- partner_box -->
+      </div><!-- col-lg-6 col-md-6 -->
+    </div><!-- row -->
+  </div><!-- container -->
+</section>
 
-      <div class="row">
-        <div class="col-lg-6 col-md-6">
-          <div class="partnership-box">
-            <div class="row align_center">
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <img src="images/img-9.png">
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <div class="partnership-box-content">
-                  <h6>Highlight Name</h6>
-                  <p>Partner</p>
-                  <p>Lorem ipsum dolor sit amet consectetur. Ut auctor cursus dui pellentesque consectetur in porta. Id
-                    elit at in sed diam in et. Ut blandit est sollicitudin aliquam. Rutrum pulvinar enim et fusce. Lorem
-                    ipsum dolor sit amet consectetur.</p>
-                </div><!-- partnership-box-content -->
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-            </div><!-- row -->
-          </div><!-- partnership-box -->
-        </div><!-- col-lg-6 col-md-6 -->
+<style>
+  .current_partners_section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
 
-        <div class="col-lg-6 col-md-6">
-          <div class="partnership-box">
-            <div class="row align_center">
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <img src="images/img-9.png">
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <div class="partnership-box-content">
-                  <h6>Highlight Name</h6>
-                  <p>Partner</p>
-                  <p>Lorem ipsum dolor sit amet consectetur. Ut auctor cursus dui pellentesque consectetur in porta. Id
-                    elit at in sed diam in et. Ut blandit est sollicitudin aliquam. Rutrum pulvinar enim et fusce. Lorem
-                    ipsum dolor sit amet consectetur.</p>
-                </div><!-- partnership-box-content -->
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-            </div><!-- row -->
-          </div><!-- partnership-box -->
-        </div><!-- col-lg-6 col-md-6 -->
+  .section_heading_partners {
+    margin-bottom: 40px;
+  }
 
-        <div class="col-lg-6 col-md-6">
-          <div class="partnership-box">
-            <div class="row align_center">
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <img src="images/img-9.png">
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <div class="partnership-box-content">
-                  <h6>Highlight Name</h6>
-                  <p>Partner</p>
-                  <p>Lorem ipsum dolor sit amet consectetur. Ut auctor cursus dui pellentesque consectetur in porta. Id
-                    elit at in sed diam in et. Ut blandit est sollicitudin aliquam. Rutrum pulvinar enim et fusce. Lorem
-                    ipsum dolor sit amet consectetur.</p>
-                </div><!-- partnership-box-content -->
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-            </div><!-- row -->
-          </div><!-- partnership-box -->
-        </div><!-- col-lg-6 col-md-6 -->
+  .c_primary_partners {
+    color: #3f291b;
+    font-size: 2.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 
-        <div class="col-lg-6 col-md-6">
-          <div class="partnership-box">
-            <div class="row align_center">
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <img src="images/img-9.png">
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-              <div class="col-lg-6 col-md-6 col-6 custom-100">
-                <div class="partnership-box-content">
-                  <h6>Highlight Name</h6>
-                  <p>Partner</p>
-                  <p>Lorem ipsum dolor sit amet consectetur. Ut auctor cursus dui pellentesque consectetur in porta. Id
-                    elit at in sed diam in et. Ut blandit est sollicitudin aliquam. Rutrum pulvinar enim et fusce. Lorem
-                    ipsum dolor sit amet consectetur.</p>
-                </div><!-- partnership-box-content -->
-              </div><!-- col-lg-6 col-md-6 col-6 -->
-            </div><!-- row -->
-          </div><!-- partnership-box -->
-        </div><!-- col-lg-6 col-md-6 -->
-      </div><!-- row -->
-    </div><!-- up_down_space -->
-  </section>
+  .partner_box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .partner_box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .partner_logo {
+    text-align: center;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  .partner_logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+  }
+
+  .partner_description {
+    flex: 2;
+  }
+
+  .partner_description h3 {
+    color: #3f291b;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .partner_description p {
+    color: #555555;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .c_primary_partners {
+      font-size: 2rem;
+    }
+
+    .partner_description h3 {
+      font-size: 1.5rem;
+    }
+
+    .partner_description p {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+
+<section class="partner_benefits_section">
+  <div class="container">
+    <div class="section_heading_benefits text-center">
+      <h2 class="c_primary_benefits benefit_box">Partner Benefits</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up">
+        <div class="benefit_box">
+          <h3>Visibility and Branding Opportunities</h3>
+          <ul class="benefit_list">
+            <li class="benefit_item">1. Website Recognition: Each partner receives a dedicated spot on BBN’s Sponsor/Partner Logos section on the homepage, ensuring high visibility to site visitors.</li>
+            <li class="benefit_item">2. Social Media Spotlights: Partners are regularly highlighted on BBN’s social media channels, showcasing their commitment to community impact.</li>
+            <li class="benefit_item">3. Event Presence: Partner logos are included in all event materials, banners, and programs, providing exposure to event attendees and BBN members.</li>
+          </ul>
+        </div><!-- benefit_box -->
+      </div><!-- col-lg-4 col-md-6 -->
+      <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="benefit_box">
+          <h3>Collaborative Opportunities</h3>
+          <ul class="benefit_list">
+            <li class="benefit_item">1. Co-Hosting Events: Partners can co-host specific events or workshops, positioning their brand as an advocate for Black-owned business empowerment.</li>
+            <li class="benefit_item">2. Panel Participation: Partner representatives may participate in BBN panels or networking events, offering expertise and connecting with BBN members.</li>
+            <li class="benefit_item">3. Exclusive Networking: BBN partners are invited to exclusive networking events where they can connect with other local leaders, business owners, and influencers within the community.</li>
+          </ul>
+        </div><!-- benefit_box -->
+      </div><!-- col-lg-4 col-md-6 -->
+      <div class="col-lg-4 col-md-6 mb-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="benefit_box">
+          <h3>Impact and Community Engagement</h3>
+          <ul class="benefit_list">
+            <li class="benefit_item">1. Direct Involvement in Initiatives: Partners can choose to align their support with specific initiatives (e.g., mentorship programs, workshops), allowing for targeted impact.</li>
+            <li class="benefit_item">2. Monthly Impact Updates: BBN provides quarterly reports for partners, detailing how their support has directly benefited the community, including success stories, metrics, and the overall impact of their contributions.</li>
+            <li class="benefit_item">3. Brand as a Community Leader: By partnering with BBN, organizations demonstrate their commitment to supporting Black entrepreneurs and fostering equitable economic development in Minnesota.</li>
+          </ul>
+        </div><!-- benefit_box -->
+      </div><!-- col-lg-4 col-md-6 -->
+    </div><!-- row -->
+    <div class="text-center mt-4">
+      <a href="https://form.jotform.com/243088677692069" class="cta_button">Become a BBN Partner Today</a>
+    </div>
+  </div><!-- container -->
+</section>
+
+<style>
+  .partner_benefits_section {
+    padding: 60px 0;
+    background: repeating-linear-gradient(
+      45deg,
+      #ffffff,
+      #ffffff 10px,
+      #d4af37 10px,
+      #d4af37 12px
+    ); /* White and gold diagonal stripes */
+  }
+
+  .section_heading_benefits {
+    margin-bottom: 40px;
+  }
+
+  .c_primary_benefits {
+    color: #3f291b; /* White text color */
+    font-size: 2.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .benefit_box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+
+  .benefit_box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .benefit_box h3 {
+    color: #3f291b;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .benefit_list {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .benefit_box:hover .benefit_list {
+    display: block;
+    opacity: 1;
+  }
+
+  .benefit_box ul li {
+    color: #555555;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .cta_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3f291b; /* Gold color */
+    color: #ffffff; /* Brown text color */
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .cta_button:hover {
+    background-color: #b59560;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .c_primary_benefits {
+      font-size: 2rem;
+    }
+
+    .benefit_box h3 {
+      font-size: 1.5rem;
+    }
+
+    .benefit_box ul li {
+      font-size: 0.9rem;
+    }
+
+    .cta_button {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
 
   <footer class="bg_primary">
     <div class="container">

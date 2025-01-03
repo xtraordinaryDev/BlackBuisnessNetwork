@@ -63,171 +63,166 @@
   
     </header>
 
-    <section>
-      <div class="container">
-        <div class="up_down_space">
-          <div class="row mb-3">
-            <div class="col-lg-12">
-              <div class="section_heading">
-                <i class="fas fa-address-book fa-3x"></i> <!-- Address book icon -->
-
-                <h3 class="c_primary">Business Directory</h3>
-                <p>Explore our directory of Black-owned businesses across Minnesota. Find and support local entrepreneurs in your community, discover unique products and services, and help drive economic growth by shopping local. Together, we can make a difference!</p>
-              </div><!-- section_heading -->
-            </div><!-- col-lg-12 -->
-          </div><!-- row -->
-
-          <div class="row mb-5">
-            <div class="col-lg-2 col-md-1"></div><!-- col-lg-2 col-md-1 -->
-            <div class="col-lg-8 col-md-10">
-              <div class="category_form">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
+        <section>
+        <div class="container">
+          <div class="up_down_space">
+            <div class="row mb-3">
+              <div class="col-lg-12">
+                <div class="section_heading">
+                  <i class="fas fa-address-book fa-3x"></i> <!-- Address book icon -->
+                  <h3 class="c_primary">Business Directory</h3>
+                  <p>Explore our directory of Black-owned businesses across Minnesota. Find and support local entrepreneurs in your community, discover unique products and services, and help drive economic growth by shopping local. Together, we can make a difference!</p>
+                </div><!-- section_heading -->
+              </div><!-- col-lg-12 -->
+            </div><!-- row -->
+      
+            <div class="row mb-5">
+              <div class="col-lg-2 col-md-1"></div><!-- col-lg-2 col-md-1 -->
+              <div class="col-lg-8 col-md-10">
+                <div class="category_form">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                      <div class="form-group">
+                        <input type="text" name="keyword" class="form-control" placeholder="Keyword" id="keywordInput">
+                      </div><!-- form-group -->
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                      <div class="form-group">
+                        <select class="form-select" id="categorySelect">
+                          <option value="">Category</option>
+                          <option value="Retail">Retail</option>
+                          <option value="Food & Beverage">Food & Beverage</option>
+                          <option value="Professional Services">Professional Services</option>
+                          <option value="Health & Wellness">Health & Wellness</option>
+                          <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                          <option value="Arts & Entertainment">Arts & Entertainment</option>
+                          <option value="Technology & IT">Technology & IT</option>
+                          <option value="Other Services">Other Services</option>
+                        </select>
+                      </div><!-- form-group -->
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                      <button onclick="searchBusinesses()">Search</button>
+                    </div>
+                  </div><!-- row -->
+                </div><!-- category_form -->
+              </div><!-- col-lg-8 col-md-10 -->
+              <div class="col-lg-2 col-md-1"></div><!-- col-lg-2 col-md-1 -->
+            </div><!-- row -->
+      
+            <div class="row mb-5" id="businessList">
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Retail</a></h6>
+                  <p>Apparel, Specialty Retail</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Food & Beverage</a></h6>
+                  <p>Restaurants, Catering Services</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Professional Services</a></h6>
+                  <p>Consulting, Legal Services</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Health & Wellness</a></h6>
+                  <p>Fitness Centers, Medical Services</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Beauty & Personal Care</a></h6>
+                  <p>Beauty Salons, Barber Shops</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Arts & Entertainment</a></h6>
+                  <p>Event Planning, Entertainment Venues</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Technology & IT</a></h6>
+                  <p>Software Development, IT Services</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+      
+              <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
+                <div class="category_box">
+                  <h6><a href="#">Other Services</a></h6>
+                  <p>Janitorial Services, Speaker – Empowerment</p>
+                </div><!-- category_box -->
+              </div><!-- col-lg-3 col-md-3 col-6 -->
+            </div><!-- row -->
+      
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="section_heading">
+                  <h3 class="c_primary">Want to submit your business?</h3>
+                  <p>Join our community of Black-owned businesses in Minnesota! Submit your business to our directory and gain visibility, connect with customers, and grow your network. Together, we can empower each other and strengthen our local economy.</p>
+                  <img src="images/img-10.png">
+                </div><!-- section_heading -->
+              </div><!-- col-lg-6 col-md-6 -->
+              <div class="col-lg-6 col-md-6">
+                <form method="post" action="">
+                  <div class="signup-form contact_form">
                     <div class="form-group">
-                      <input type="text" name="keyword" class="form-control" placeholder="Keyword">
+                      <input type="text" name="name" class="form-control" placeholder="Name" required="required">
                     </div><!-- form-group -->
-                  </div>
-                  <div class="col-lg-4 col-md-4">
+      
                     <div class="form-group">
-                      <select class="form-select">
-                        <option>Category</option>
-                      </select>
+                      <input type="email" name="email" class="form-control" placeholder="Email" required="required">
                     </div><!-- form-group -->
-                  </div>
-                  <div class="col-lg-2 col-md-2">
-                    <button>Search</button>
-                  </div>
-                </div><!-- row -->
-              </div><!-- category_form -->
-            </div><!-- col-lg-8 col-md-10 -->
-            <div class="col-lg-2 col-md-1"></div><!-- col-lg-2 col-md-1 -->
-          </div><!-- row -->
-
-          <div class="row mb-5">
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-
-            <div class="col-lg-3 col-md-3 col-6 custom-100 mb-3">
-              <div class="category_box">
-                <h6><a href="#">Category</a></h6>
-                <p>Lorem ipsum dolor sit amet consectetur. Porttitor nisi mauris praesent egestas lectus diam.</p>
-              </div><!-- category_box -->
-            </div><!-- col-lg-3 col-md-3 col-6 -->
-          </div><!-- row -->
-
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <div class="section_heading">
-                
-                <h3 class="c_primary">Want to submit your business?</h3>
-                <p>Join our community of Black-owned businesses in Minnesota! Submit your business to our directory and gain visibility, connect with customers, and grow your network. Together, we can empower each other and strengthen our local economy.</p>
-                
-                <img src="images/img-10.png">
-              </div><!-- section_heading -->
-            </div><!-- col-lg-6 col-md-6 -->
-            <div class="col-lg-6 col-md-6">
-              <form method="post" action="">
-              <div class="signup-form contact_form">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Name" required="required">
-                </div><!-- form-group -->
-
-                <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="Email" required="required">
-                </div><!-- form-group -->
-
-                <div class="form-group">
-                  <input type="tel" name="phone" class="form-control" placeholder="Phone (Optional)">
-                </div><!-- form-group -->
-
-                <div class="form-group">
-                  <textarea rows="4" class="form-control" placeholder="Message"></textarea>
-                </div><!-- form-group -->
-
-                <button>Submit</button>
-              </div><!-- signup-form -->
-            </form>
-            </div><!-- col-lg-6 col-md-6 -->
-          </div><!-- row -->
-        </div><!-- up_down_space -->
-      </div><!-- container -->
-    </section>
+      
+                    <div class="form-group">
+                      <input type="tel" name="phone" class="form-control" placeholder="Phone (Optional)">
+                    </div><!-- form-group -->
+      
+                    <div class="form-group">
+                      <textarea rows="4" class="form-control" placeholder="Message"></textarea>
+                    </div><!-- form-group -->
+      
+                    <button>Submit</button>
+                  </div><!-- signup-form -->
+                </form>
+              </div><!-- col-lg-6 col-md-6 -->
+            </div><!-- row -->
+          </div><!-- up_down_space -->
+        </div><!-- container -->
+      </section>
+      
+      <script>
+        function searchBusinesses() {
+          const keyword = document.getElementById('keywordInput').value.toLowerCase();
+          const category = document.getElementById('categorySelect').value.toLowerCase();
+          const businessList = document.getElementById('businessList');
+          const businesses = businessList.getElementsByClassName('category_box');
+      
+          for (let i = 0; i < businesses.length; i++) {
+            const business = businesses[i];
+            const businessText = business.innerText.toLowerCase();
+      
+            if ((keyword && businessText.includes(keyword)) || (category && businessText.includes(category)) || (!keyword && !category)) {
+              business.parentElement.style.display = 'block';
+            } else {
+              business.parentElement.style.display = 'none';
+            }
+          }
+        }
+      </script>
 
 
     <footer class="bg_primary">
