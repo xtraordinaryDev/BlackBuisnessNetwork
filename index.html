@@ -434,9 +434,10 @@
       scrollbar-width: thin;
       scrollbar-color: #3f291b #ffffff;
       display: flex;
-      overflow-x: auto;
+      overflow-x: scroll;
       scroll-snap-type: x mandatory;
       white-space: nowrap;
+      -webkit-overflow-scrolling: touch; /* Ensure smooth scrolling on iOS */
     }
 
     .ticker_list::-webkit-scrollbar {
