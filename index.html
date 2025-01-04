@@ -66,6 +66,12 @@
                       <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="apparel.html">Apparel</a>
+                    </li>
+                    <li class="nav-item">
                       <a class="nav-link header_btn"
                         href="https://www.zeffy.com/embed/donation-form/77994153-f598-4c92-a324-373908dda8b3?modal=true">Donate</a>
                     </li>
@@ -356,7 +362,7 @@
           <li class="ticker_item"
             style="flex: 0 0 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; scroll-snap-align: start;"
             data-aos="fade-up">
-            <span class="icon" style="color: gold; font-size: 2rem; margin-bottom: 10px;">&#9733;</span>
+            <span class="icon" style="color: gold; font-size: 2rem; margin-bottom: 10px;"><i class="fas fa-rocket"></i></span>
             <div style="text-align: center;">
               <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
                   style="text-decoration: none; color: inherit;">BBN Official Launch in January 2025</a></h4>
@@ -735,6 +741,149 @@
       }
     }
   </style>
+
+<!-- Pop-Up Modal -->
+<div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Welcome to BBN!</h2>
+    <p>To proceed, please review and accept our <a href="images/Terms of Service.pdf" target="_blank">Terms of Service</a> and <a href="images/Privacy Policy.pdf" target="_blank">Privacy Policy</a>.</p>
+    <p>
+      <input type="checkbox" id="agreeCheckbox"> I have read and agree to the Terms of Service and Privacy Policy.
+    </p>
+    <div class="button-group">
+      <button id="acceptBtn" class="btn_primary" disabled>Accept</button>
+      <button id="declineBtn" class="btn_secondary">Decline</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn_primary {
+    background-color: #3f291b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn_primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .btn_secondary {
+    background-color: #555555;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn_secondary:hover {
+    background-color: #777777;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+</style>
+
+<script>
+  // Get modal elements
+  var modal = document.getElementById("termsModal");
+  var closeBtn = document.getElementsByClassName("close")[0];
+  var acceptBtn = document.getElementById("acceptBtn");
+  var declineBtn = document.getElementById("declineBtn");
+  var agreeCheckbox = document.getElementById("agreeCheckbox");
+
+  // Show modal on first visit
+  window.onload = function() {
+    if (!localStorage.getItem("termsAccepted")) {
+      modal.style.display = "flex";
+    }
+  };
+
+  // Close modal
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  // Enable accept button when checkbox is checked
+  agreeCheckbox.onchange = function() {
+    acceptBtn.disabled = !this.checked;
+  };
+
+  // Accept button functionality
+  acceptBtn.onclick = function() {
+    localStorage.setItem("termsAccepted", "true");
+    modal.style.display = "none";
+  };
+
+  // Decline button functionality
+  declineBtn.onclick = function() {
+    modal.style.display = "none";
+    window.location.href = "index.html";
+  };
+
+  // Reappear modal on restricted access
+  function showTermsModal() {
+    if (!localStorage.getItem("termsAccepted")) {
+      modal.style.display = "flex";
+    }
+  }
+</script>
+
 
   <footer class="bg_primary">
     <div class="container">
