@@ -12,58 +12,67 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 `
   </head>
-<footer class="bg_primary">
-    <div class="container">
-      <div class="up_down_space">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-logo">
-               <a href="index.html"><img src="images/logo.png"></a>
+<footer id="footer" class="footer dark-background">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="images/logo.png" alt="BBN Logo" class="footer-logo ms-2">
+            </a>
+            <div class="footer-contact pt-3">
+              <p class="mt-3"><strong>Phone:</strong> <span>612-547-6364</span></p>
+              <p><strong>Email:</strong> <span>customerservice@bbn.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href="https://www.facebook.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i
+                    class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i
+                    class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-lg-5 col-md-5">
-            <div class="footer-content">
-              <p>Empowering Black businesses in Minnesota through support, education, and community. Join us in building a stronger future together.</p>
-            </div>
-          </div><!-- col-lg-4 -->
-          <div class="col-lg-1 col-md-1"></div>
 
-          <div class="col-lg-6 col-md-6">
-            <div class="footer_menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="directory-business.html">Directory</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="">Donate</a></li>
-              </ul>
-            </div><!-- footer_menu -->
-          </div><!-- col-lg-6 col-md-6 -->
-        </div><!-- row -->
-        <div class="row align_center">
-          <div class="col-lg-6 col-md-6 col-4">
-            <div class="footer_social">
-                <ul class="social-media-links">
-                    <li><a href="https://www.facebook.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i class="fa-brands fa-instagram"></i></a></li>
-                  </ul>
-                  
-            </div>
-          </div><!-- col-lg-6 col-md-6 -->
-          <div class="col-lg-6 col-md-6 col-8 custom-100">
-            <div class="footer_sponsors">
-              <ul>
-                <li><a href=""><img src="images/sponsors.png"></a></li>
-                <li><a href=""><img src="images/sponsors.png"></a></li>
-              </ul>
-            </div><!-- footer_btn -->
-          </div><!-- col-lg-6 col-md-6 -->
-        </div><!-- row -->
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="join.html">Join</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="events.html">Events</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="terms-of-service.html">Terms of Service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="directory-business.html">Directory</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="sponsors.html">Sponsors</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="resources.html">Resources</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="volunteer.html">Volunteer</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="internship.html">Internship</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our events and resources!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">BBN</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          Designed by <a class="xtra" href="https://x-traordinarydevelopment.com/">X-Traordinary Development</a>
+        </div>
       </div>
     </div>
   </footer>
