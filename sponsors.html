@@ -67,62 +67,200 @@
       </div><!-- container -->
     </div><!-- bg_primary -->
 
-    <div class="sponsors_hero">
-      <img src="images/innerbanner4.png">
-
-      <div class="sponsors_hero_content">
-        <div class="container">
-          <div class="row"></div>
-        <div class="col-lg-12">
-          <h1>Become A Sponsor</h1>
-        </div><!-- col-lg-12 -->
-          </div><!-- row -->
-
-          <div class="row"></div>
-        <div class="col-lg-12">
-          <div class="sponsors_hero_box">
-            <p>“As a sponsor, you’ll be directly supporting workshops, mentorship, and community events that foster
-          growth for Black-owned businesses in Minnesota. Sponsors also receive exclusive BBN apparel and
-          recognition across our platforms.”</p>
-          </div><!-- sponsors_hero_box -->
-        </div><!-- col-lg-12 -->
-          </div><!-- row -->
-        </div><!-- container -->
-      </div><!-- sponsors_hero_content -->
+         <div class="sponsors_hero">        <div class="sponsors_hero">
+          <img src="images/innerbanner4.png" class="sponsors_hero_img">
+        
+          <div class="sponsors_hero_content">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sponsors_hero_heading">
+                    <h1>Become A Sponsor</h1>
+                  </div><!-- sponsors_hero_heading -->
+                </div><!-- col-lg-12 -->
+              </div><!-- row -->
+        
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="sponsors_hero_box">
+                    <p>“As a sponsor, you’ll be directly supporting workshops, mentorship, and community events that foster
+                      growth for Black-owned businesses in Minnesota. Sponsors also receive exclusive BBN apparel and
+                      recognition across our platforms.”</p>
+                  </div><!-- sponsors_hero_box -->
+                </div><!-- col-lg-12 -->
+              </div><!-- row -->
+            </div><!-- container -->
+          </div><!-- sponsors_hero_content -->
         </div><!-- sponsors_hero -->
-
+        
         <style>
-      .sponsors_hero {
-        position: relative;
-        text-align: center;
-        color: white;
-      }
-
-      .sponsors_hero img {
-        width: 100%;
-        height: auto;
-      }
-
-      .sponsors_hero_content {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .sponsors_hero h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
-
-      .sponsors_hero_box p {
-        font-size: 1.2rem;
-        line-height: 1.5;
-      }
+          .sponsors_hero {
+            position: relative;
+            text-align: center;
+            color: #fff;
+          }
+        
+          .sponsors_hero_img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+          }
+        
+          .sponsors_hero_content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 20px;
+          }
+        
+          .sponsors_hero_heading {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 50px; /* Rounded corners to create a bubble effect */
+            display: inline-block;
+          }
+        
+          .sponsors_hero_heading h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+            color: #fff; /* Ensure text is white */
+          }
+        
+          .sponsors_hero_box {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+          }
+        
+          .sponsors_hero_box p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            color: #fff; /* Ensure text is white */
+          }
+        
+          @media (max-width: 768px) {
+            .sponsors_hero_content {
+              padding: 10px;
+            }
+        
+            .sponsors_hero_heading h1 {
+              font-size: 2rem;
+            }
+        
+            .sponsors_hero_box p {
+              font-size: 1rem;
+            }
+          }
+        
+          @media (max-width: 576px) {
+            .sponsors_hero_content {
+              padding: 5px;
+            }
+        
+            .sponsors_hero_heading h1 {
+              font-size: 1.5rem;
+            }
+        
+            .sponsors_hero_box p {
+              font-size: 0.875rem;
+            }
+          }
         </style>
+        <img src="images/innerbanner4.png" class="sponsors_hero_img">
+      
+        <div class="sponsors_hero_content">
+          <div class="container">
+            <div class="row">
+              <div class=" col-lg-12">
+                <h1>Become A Sponsor</h1>
+              </div><!-- col-lg-12 -->
+            </div><!-- row -->
+      
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="sponsors_hero_box">
+                  <p>As a sponsor, you’ll be directly supporting workshops, mentorship, and community events that foster
+                    growth for Black-owned businesses in Minnesota. Sponsors also receive exclusive BBN apparel and
+                    recognition across our platforms.</p>
+                </div><!-- sponsors_hero_box -->
+              </div><!-- col-lg-12 -->
+            </div><!-- row -->
+          </div><!-- container -->
+        </div><!-- sponsors_hero_content -->
+      </div><!-- sponsors_hero -->
+      
+      <style>
+        .sponsors_hero {
+          position: relative;
+          text-align: center;
+          color: #fff;
+        }
+      
+        .sponsors_hero_img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      
+        .sponsors_hero_content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          padding: 20px;
+        }
+      
+        .sponsors_hero_content h1 {
+          font-size: 3rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #fff; /* Ensure text is white */
+        }
+      
+        .sponsors_hero_box {
+          background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+          padding: 20px;
+          border-radius: 10px;
+        }
+      
+        .sponsors_hero_box p {
+          font-size: 1.25rem;
+          line-height: 1.5;
+          color: #fff; /* Ensure text is white */
+        }
+      
+        @media (max-width: 768px) {
+          .sponsors_hero_content {
+            padding: 10px;
+          }
+      
+          .sponsors_hero_content h1 {
+            font-size: 2rem;
+          }
+      
+          .sponsors_hero_box p {
+            font-size: 1rem;
+          }
+        }
+      
+        @media (max-width: 576px) {
+          .sponsors_hero_content {
+            padding: 5px;
+          }
+      
+          .sponsors_hero_content h1 {
+            font-size: 1.5rem;
+          }
+      
+          .sponsors_hero_box p {
+            font-size: 0.875rem;
+          }
+        }
+      </style>
   </header>
   <section class="sponsorship_levels">
     <div class="container">
@@ -662,9 +800,9 @@
             </div>
             <div class="social-links d-flex mt-4">
               <a href="https://www.facebook.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i
-                    class="fa-brands fa-facebook"></i></a>
+                  class="fa-brands fa-facebook"></i></a>
               <a href="https://www.instagram.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i
-                    class="fa-brands fa-instagram"></i></a>
+                  class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
 
