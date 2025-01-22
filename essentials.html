@@ -88,12 +88,13 @@
               <h3 class="c_primary mb-3">BBN Toolkit Essentials – Launching Q2 2025</h3>
               <p>Launching in Q2 2025, BBN Toolkit Essentials is your go-to resource for practical, affordable tools designed to support and grow your business. Our digital toolkits include guides like "Build Business Credit," "Digital Marketing Basics," and "Winning Contracts" to provide actionable steps for entrepreneurial success. Accessible and cost-effective, these resources empower businesses to navigate key challenges with confidence. Stay tuned for our launch and take the first step toward building your business foundation!</p>
               <p><strong>Sign Up for Updates:</strong> Add your email to be the first to know when BBN Toolkit Essentials becomes available!</p>
-              <form action="signup.php" method="post" id="signupForm">
+              <form action="forms/signup.php" method="post" id="signupForm">
                 <div class="form-group">
                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
                 </div>
                 <button type="submit" class="btn_primary">Sign Up</button>
               </form>
+              <div id="formResponse"></div>
             </div><!-- section_heading -->
           </div><!-- col-lg-12 -->
         </div><!-- row -->
@@ -127,6 +128,28 @@
       background-color: #d4af37;
     }
   </style>
+
+<script>
+  document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var formData = new FormData(this);
+
+    fetch('forms/signup.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('formResponse').innerHTML = data;
+      document.getElementById('signupForm').reset(); // Clear the form fields
+    })
+    .catch(error => {
+      document.getElementById('formResponse').innerHTML = 'There was an error submitting the form. Please try again.';
+    });
+  });
+</script>
+
 
   <footer id="footer" class="footer dark-background">
     <div class="footer-top">
