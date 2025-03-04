@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate the email
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         // Email is valid, proceed with sending the email
-        $to = "xtraordinarydev@outlook.com"; // Replace with your email address
+        $to = "connect@blackbusinessnetworkmn.org"; // Replace with your email address
         $subject = "New Contact Form Submission";
         $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage:\n$message";
         $headers = "From: connect@blackbusinessnetworkmn.org"; // Replace with your domain's email address
