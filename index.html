@@ -75,7 +75,7 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link header_btn"
-                        href="https://www.givemn.org/donate/East-Side-Neighborhood-Development-Company">Donate</a>
+                        href="https://donate.stripe.com/00w7sKdhh94l4RmbZc8IU04">Donate</a>
                     </li>
                   </ul>
                 </div>
@@ -122,7 +122,7 @@
               <div class="button_group_mission">
                 <a class="btn_gold_mission" href="join-member.html">Join Now</a>
                 <a class="btn_gold_mission"
-                  href="https://www.givemn.org/donate/East-Side-Neighborhood-Development-Company">Donate
+                  href="https://donate.stripe.com/00w7sKdhh94l4RmbZc8IU04">Donate
                   Now</a>
               </div>
             </div><!-- section_heading_mission -->
@@ -230,7 +230,7 @@
               <div class="image-content-box bg_primary" data-aos="fade-up">
                 <h6 data-aos="fade-up">Black History Month Wellness Workshop</h6>
                 <strong data-aos="fade-up">January 20</strong>
-                <p data-aos="fade-up">Join us for a Wellness Workshop in celebration of Black History Month, where we’ll
+                <p data-aos="fade-up">Join us for a Wellness Workshop in celebration of Black History Month, where we'll
                   focus on holistic health and well-being for Black entrepreneurs.</p>
               </div>
             </div>
@@ -242,7 +242,7 @@
                 <h6 data-aos="fade-up">Women Who Lead Virtual Event</h6>
                 <strong data-aos="fade-up">March 12</strong>
                 <p data-aos="fade-up">Celebrate Women's History Month with a virtual panel of inspiring Black women
-                  leaders who’ll share their insights on leadership, resilience, and success.</p>
+                  leaders who'll share their insights on leadership, resilience, and success.</p>
               </div>
             </div>
         </div>
@@ -370,7 +370,7 @@
             <div style="text-align: center;">
               <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
                   style="text-decoration: none; color: inherit;">BBN Official Launch in January 2025</a></h4>
-              <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">We’re excited to
+              <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">We're excited to
                 announce the official launch of the Black Business Network (BBN) in January 2025! Our mission is to
                 empower Black-owned businesses and professionals across Minnesota by fostering economic development,
                 community support, and lasting connections. Join us as we kick off this journey together and take the
@@ -385,8 +385,8 @@
               <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
                   style="text-decoration: none; color: inherit;">January – New Year, New Beginnings</a></h4>
               <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">January marks the
-                start of BBN’s Monthly Initiatives! This month’s theme, ‘New Year, New Beginnings,’ focuses on setting
-                strong foundations for growth and success. We’ll be offering resources, networking events, and valuable
+                start of BBN's Monthly Initiatives! This month's theme, 'New Year, New Beginnings,' focuses on setting
+                strong foundations for growth and success. We'll be offering resources, networking events, and valuable
                 insights to help our members start the year on the right foot. Stay tuned for workshops and events
                 designed to support your journey</p>
             </div>
@@ -399,11 +399,11 @@
               <h4 style="margin: 0; color: #3f291b; font-size: 1.25rem; white-space: normal;"><a href="#"
                   style="text-decoration: none; color: inherit;">Success Story: Just Imagine</a></h4>
               <p style="margin: 10px 0 0; color: #3f291b; font-size: 0.95rem; white-space: normal;">Just Imagine, one of
-                our member businesses, reflects on their journey with the Black Business Network: ‘In a world where the
+                our member businesses, reflects on their journey with the Black Business Network: 'In a world where the
                 journey of entrepreneurship can often feel isolating, BBN has emerged as a beacon of hope and
                 collaboration. We are grateful for the incredible community that not only celebrates individuality but
-                also amplifies collective strength. Through BBN’s workshops and connections with local and state
-                officials, we’ve gained knowledge, advocacy, and a sense of belonging. Together, we’re building a legacy
+                also amplifies collective strength. Through BBN's workshops and connections with local and state
+                officials, we've gained knowledge, advocacy, and a sense of belonging. Together, we're building a legacy
                 of resilience and empowerment, breaking barriers and setting new standards for success in our
                 communities.</p>
             </div>
@@ -471,7 +471,7 @@
               <i class="fas fa-handshake fa-3x icon_sponsor"></i> <!-- Handshake icon for partnership -->
               <h2 class="title_sponsor">Become a sponsor!</h2>
               <p class="description_sponsor">Partner with us to support Black-owned businesses across Minnesota. As a
-                sponsor, you’ll help drive economic growth, create opportunities, and make a lasting impact on our
+                sponsor, you'll help drive economic growth, create opportunities, and make a lasting impact on our
                 community. Join us in empowering entrepreneurs and fostering a brighter future for all.</p>
               <a class="btn_primary_sponsor" href="sponsors.html">Learn about sponsorship</a>
             </div><!-- section_heading_sponsor -->
@@ -573,9 +573,17 @@
     </div><!-- row -->
     <div class="row align_center sponsor-logos" data-aos="fade-up">
       <div class="col-lg-12 text-center">
-        <div class="sponsor-logo">
-          <img src="images/rooted.jpeg" alt="Rooted Philanthropic">
-        </div><!-- sponsor-logo -->
+        <div class="sponsor-row">
+          <div class="sponsor-logo">
+            <img src="images/laugh.jpg" alt="Laugh MN">
+          </div>
+          <div class="sponsor-logo">
+            <img src="images/MNblack_box.png" alt="Black Box">
+          </div>
+        </div>
+        <div class="sponsor-logo mt-4 st-thomas-logo">
+          <img src="images/st.thomas.jpg" alt="St. Thomas">
+        </div>
       </div><!-- col-lg-12 -->
     </div><!-- row -->
     <div class="row align_center" data-aos="fade-up">
@@ -714,6 +722,38 @@
 
       .become-partner-link {
         padding: 8px 16px;
+      }
+    }
+
+    /* Add this to your existing sponsor styles */
+    .sponsor-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .sponsor-logo {
+      flex: 0 1 auto;
+    }
+    
+    .sponsor-logo img {
+      max-width: 200px;
+      height: auto;
+    }
+    
+    .st-thomas-logo img {
+      max-width: 300px;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .sponsor-row {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .st-thomas-logo img {
+        max-width: 250px;
       }
     }
   </style>
@@ -871,9 +911,9 @@
               <img src="images/logo.png" alt="BBN Logo" class="footer-logo ms-2">
             </a>
             <div class="footer-contact pt-3">
-              <p class="mt-3"><strong>Phone:</strong> <span>651-288-8755</span></p>
+              <p class="mt-3"><strong>Phone:</strong> <span>612-200-2618</span></p>
               <p><strong>Email:</strong> <span>connect@blackbusinessnetworkmn.org</span></p>
-              <p><strong>Location :</strong> <span>925 payne ave ste 200 st.paul, mn 55130</span></p>
+              <p><strong>Location :</strong> <span>Location 925 payne ave ste B2 st.paul, mn 55130</span></p>
             </div>
             <div class="social-links d-flex mt-4">
               <a href="https://www.facebook.com/profile.php?id=61563270073830&mibextid=LQQJ4d"><i
